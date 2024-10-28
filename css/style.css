@@ -6,7 +6,7 @@
 :root {
   --c-dark: #212529;
   --c-brand: #E9D715;
-  --c-brand-light: #1b6ec2;
+  --c-brand-light: blue;
   --c-brand-rgb: 78, 87, 212;
   --c-body: #8e8d8a;  
   --font-base: "ClashDisplay", sans-serif;
@@ -58,7 +58,7 @@ img {
 }
 
 .navbar-nav .nav-link.active {
-  color: var(--c-dark);
+  color: var(--c-brand-light);
 }
 
 .navbar img{
@@ -195,12 +195,12 @@ img {
 
 .service:hover h5,
 .service:hover p {
-  color: white;
+  color: var(--c-dark);
 }
 
 .service:hover .iconbox {
   background-color: rgba(255, 255, 255, 0.2);
-  color: white;
+  color: var(--c-dark);
 }
 
 /* PORTOFOLIO */
@@ -318,7 +318,7 @@ footer ul {
 footer .line {
   width: 40px;
   height: 4px;
-  background-color: var(--c-brand-light);
+  background-color: var(--c-brand);
   margin-top: 12px;
   margin-bottom: 24px;
 }
@@ -386,34 +386,6 @@ footer .line {
 .dropdown-menu.show {
   margin-bottom: 10px; /* Menambahkan margin bawah untuk memberikan jarak dari tombol */
 }
-
-
-
-/* .whatsapp-btn {
-  position: fixed;
-  bottom: 20px; 
-  right: 20px;  
-  background-color: #25d366;  
-  color: white;
-  width: 60px; 
-  height: 60px; 
-  border-radius: 50%; 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 100;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.whatsapp-btn:hover {
-  background-color: #1ebe57;
-  color: var(--c-dark);
-  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); 
-}
-
-.whatsapp-btn i {
-  font-size: 28px; 
-} */
 
 @media (max-width: 768px) {
   #hero h1 {
