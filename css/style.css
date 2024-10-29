@@ -50,6 +50,7 @@ img {
 .navbar {
   box-shadow: var(--box-shadow);
   background-color: var(--c-brand);
+  padding-top: 0;
 }
 
 .navbar-nav .nav-link {
@@ -63,7 +64,7 @@ img {
 
 .navbar img{
   height: 70px;
-  width:  110px;
+  width:  90px;
 }
 .navbar .btn{
   background-color: white; /* Warna latar hijau khas WhatsApp */
@@ -113,6 +114,22 @@ img {
   background: linear-gradient(rgba(91, 90, 90, 0.853), rgba(7, 76, 150, 0.7)), url(../assets/img/header/header.jpg);
   background-size: cover;
   background-position: center;
+}
+
+.hero-icons a {
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 248, 248, 0.623);
+  border-radius: 100px;
+  color: var(--c-dark);
+}
+
+.hero-icons a:hover {
+  background-color: var(--c-dark);
+  color: white;
 }
 
 #hero h1 {
@@ -248,6 +265,26 @@ img {
   max-width: 300px;
   max-height: 200px;
   object-fit: contain; /* Memastikan gambar tidak terpotong dan proporsional */
+}
+
+/* REVIEW */
+#reviews .rounded-circle {
+  height: 75px;
+  width: 75px;
+}
+
+.review-head {
+  position: relative;
+}
+
+.review-head::after {
+  content: "";
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  bottom: -14px;
+  background-color: white;
+  transform: rotate(45deg);
 }
 
 /* CONTACT */
@@ -388,6 +425,11 @@ footer .line {
 }
 
 @media (max-width: 768px) {
+  .navbar {
+    box-shadow: var(--box-shadow);
+    background-color: var(--c-brand);
+    padding-top: 0;
+  }
   #hero h1 {
   font-size: 25px;
 }
