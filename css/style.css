@@ -158,6 +158,7 @@ img {
 }
 
 .hero-icons a {
+  margin-top: 1rem;
   width: 3rem;
   height: 3rem;
   display: inline-flex;
