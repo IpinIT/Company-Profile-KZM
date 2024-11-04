@@ -23,7 +23,7 @@
   <body data-bs-spy="scroll" data-bs-target=".navbar">
 
     <!-- Modal Structure -->
-    <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true" aria-labelledby="exampleModalLabel">
+    <!-- <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true" aria-labelledby="exampleModalLabel">
       <div class="modal-dialog modal-dialog-centered modal-lg">
           <div class="modal-content">
               <div class="modal-body text-center position-relative">
@@ -33,7 +33,7 @@
               </div>
           </div>
       </div>
-    </div>
+    </div> -->
 
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg sticky-top">
@@ -50,6 +50,7 @@
           aria-controls="navbarNav"
           aria-expanded="false"
           aria-label="Toggle navigation"
+          id="navbarToggler"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -720,14 +721,14 @@
     <!-- Floating Button -->
     <div class="floating-btn dropdown" data-bs-toggle="dropdown" aria-expanded="false">
       <i class="ri-whatsapp-fill"></i> <!-- Ikon WhatsApp -->
-  </div>
+    </div>
 
-  <!-- Dropdown Menu -->
-  <ul class="dropdown-menu" data-aos="fade-down" data-aos-delay="150">
-      <li><a class="dropdown-item" href="https://wa.me/+6281219596867" target="_blank">Willi: 0812-1959-6867</a></li>
-      <li><a class="dropdown-item" href="https://wa.me/+6281808171668" target="_blank">Raga: 0818-0817-1668</a></li>
-      <li><a class="dropdown-item" href="https://wa.me/+6281284607538" target="_blank">Rivaldi: 0812-8460-7538</a></li>
-  </ul>
+    <!-- Dropdown Menu -->
+    <ul class="dropdown-menu" data-aos="fade-down" data-aos-delay="150">
+        <li><a class="dropdown-item" href="https://wa.me/+6281219596867" target="_blank">Willi: 0812-1959-6867</a></li>
+        <li><a class="dropdown-item" href="https://wa.me/+6281808171668" target="_blank">Raga: 0818-0817-1668</a></li>
+        <li><a class="dropdown-item" href="https://wa.me/+6281284607538" target="_blank">Rivaldi: 0812-8460-7538</a></li>
+    </ul>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -753,7 +754,18 @@
             $('#imageModal').modal('hide');
         });
       });
-      
+    </script>
+    <script>
+      // Detect klik di luar navbar untuk menutup menu hamburger
+      document.addEventListener('click', function(event) {
+        var navbarToggler = document.getElementById('navbarToggler');
+        var navbarCollapse = document.getElementById('navbarNav');
+        
+        // Check jika menu navbar sedang terbuka dan klik di luar menu
+        if (navbarCollapse.classList.contains('show') && !navbarCollapse.contains(event.target) && !navbarToggler.contains(event.target)) {
+          navbarToggler.click();
+        }
+      });
     </script>
 
   </body>
