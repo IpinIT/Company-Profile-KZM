@@ -112,13 +112,13 @@ img {
 }
 
 .modal-body img {
-  height: 30rem;
-  width: 25rem;
+  height: 35rem;
+  width: 30rem;
 }
 
 #closeButton {
-  position: absolute;
-  top: 10px; /* Jarak tombol dari bagian atas modal */
+  position: relative;
+  top: 0; /* Jarak tombol dari bagian atas modal */
   right: 10px; /* Jarak tombol dari bagian kanan modal */
 }
 
