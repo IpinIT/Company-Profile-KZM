@@ -107,10 +107,18 @@ img {
 
 
 /* Modal */
-#imageModal img {
-  height: 100%;
-  width: 100%;
+.modal-body {
+  position: relative; /* Memastikan elemen di dalamnya bisa diposisikan absolut */
 }
+
+#closeButton {
+  position: absolute;
+  top: 10px; /* Jarak tombol dari bagian atas modal */
+  right: 10px; /* Jarak tombol dari bagian kanan modal */
+  z-index: 1050; /* Pastikan tombol muncul di atas gambar */
+}
+
+
 
 /* HERO */
 #hero {
