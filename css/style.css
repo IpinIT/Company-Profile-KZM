@@ -1,6 +1,3 @@
-/* import fontstyle */
-@import url(/css/clash-display.css);
-
 /* membuat template style yang tinggal dipanggil */
 /* VARIABLES */
 :root {
@@ -122,22 +119,6 @@ img {
   background-position: center;
 }
 
-.hero-icons a {
-  width: 40px;
-  height: 40px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background-color: rgba(255, 248, 248, 0.623);
-  border-radius: 100px;
-  color: var(--c-dark);
-}
-
-.hero-icons a:hover {
-  background-color: var(--c-dark);
-  color: white;
-}
-
 #hero h1 {
   font-size: 4rem;
 }
@@ -164,8 +145,13 @@ img {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border-radius: 100px;
+  background-color: rgba(255, 248, 248, 0.623);
+  border-radius: 50px;
+  color: var(--c-dark);
+}
 
+.hero-icons i {
+  font-size: 1.5em;
 }
 
 .hero-icons a:hover {
@@ -439,7 +425,6 @@ footer .line {
   left: auto; /* Menghindari overlap */
   transform: translateY(-10px); /* Menempatkan dropdown sedikit di atas tombol */
   background-color: #1ebe57;
-  
 }
 
 .dropdown-menu.show {
