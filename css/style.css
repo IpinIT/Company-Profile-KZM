@@ -111,11 +111,15 @@ img {
   position: relative; /* Memastikan elemen di dalamnya bisa diposisikan absolut */
 }
 
+.modal-body img {
+  height: 30rem;
+  width: 25rem;
+}
+
 #closeButton {
   position: absolute;
   top: 10px; /* Jarak tombol dari bagian atas modal */
   right: 10px; /* Jarak tombol dari bagian kanan modal */
-  z-index: 1050; /* Pastikan tombol muncul di atas gambar */
 }
 
 
